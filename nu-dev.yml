@@ -1,0 +1,12 @@
+nu:
+  msg:
+    Salutare dev
+  build-version:
+    3
+  mail-details:
+    hostName: patriciubogatu
+    port: 9000
+  activeBranches[0]: Mubai
+  activeBranches[1]: Tubai
+  activeBranches[2]: Lubai
+  activeBranches[3]: Trubarai
