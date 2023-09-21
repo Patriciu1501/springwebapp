@@ -4,7 +4,7 @@ nu:
   build-version:
     4
   mail-details:
-    hostName: {cipher}e916efa2dc710701200dd69bdfe148ac1f8d31609977817271f17a7eac6862ae
+    hostName: '{cipher}e916efa2dc710701200dd69bdfe148ac1f8d31609977817271f17a7eac6862ae'
     port: 9000
   activeBranches[0]: Mubai
   activeBranches[1]: Tubai
