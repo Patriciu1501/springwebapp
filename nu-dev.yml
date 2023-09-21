@@ -2,7 +2,7 @@ nu:
   msg:
     Salutare dev
   build-version:
-    3
+    4
   mail-details:
     hostName: patriciubogatu
     port: 9000
