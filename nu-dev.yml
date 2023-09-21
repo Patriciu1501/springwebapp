@@ -1,8 +1,7 @@
 nu:
   msg:
     Salutare dev
-  build-version:
-    4
+  build-version: 5
   mail-details:
     hostName: '{cipher}e916efa2dc710701200dd69bdfe148ac1f8d31609977817271f17a7eac6862ae'
     port: 9000
