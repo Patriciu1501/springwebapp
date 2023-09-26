@@ -25,6 +25,19 @@ eureka:
     serviceUrl:
       defaultZone: http://eureka:8084/eureka
 
+resilience4j:
+  circuitbreaker:
+    configs:
+      default:
+        register-health-indicator: true
+    instances:
+      detailsForNuSupportApp:
+        minimum-number-of-calls: 5
+        failure-rate-threshold: 50
+        wait-duration-in-open-state: 30s
+        permitted-number-of-calls-in-half-open-state: 2
+
+
 # /actuator/info
 info:
   app:
