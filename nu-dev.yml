@@ -1,11 +1,33 @@
-nu:
-  msg:
-    Salutare dev
-  build-version: 5
-  mail-details:
-    hostName: '{cipher}e916efa2dc710701200dd69bdfe148ac1f8d31609977817271f17a7eac6862ae'
-    port: 9000
-  activeBranches[0]: Mubai
-  activeBranches[1]: Tubai
-  activeBranches[2]: Lubai
-  activeBranches[3]: Trubarai
+server:
+  port: 8081
+  error:
+    include-message: always
+    include-stacktrace: never
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    shutdown:
+      enabled: true
+  info:
+    env:
+      enabled: true
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://eureka:8084/eureka
+
+# /actuator/info
+info:
+  app:
+    name: 'Loans nu'
+    description: 'norok'
+    version: 1.0.0
