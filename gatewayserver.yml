@@ -1,0 +1,29 @@
+server:
+  port: 8085
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://localhost:8084/eureka
+
+info:
+  app:
+    name: 'Gateway Server Microservice'
+    description: 'Bogatu Gateway Server Application'
+    version: 1.0.0
+
+logging:
+  level:
+    com:
+      microservices:
+        gatewayserver: DEBUG
